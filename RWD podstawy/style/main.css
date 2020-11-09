@@ -96,4 +96,55 @@ footer {
         justify-content: space-between;
     }
 
-    @media()
+    @media(min-width:1024px) {
+        .container {
+            display: grid;
+            grid-template-columns: 2fr 4fr 2fr;
+            grid-template-rows: 1fr 3fr 3fr 1fr;
+            grid-template-areas:
+                "header header header header"
+                "nav main main sidebar"
+                "nav main main Ad"
+                "footer footer footer footer"
+            ;
+        }
+
+        header {
+            grid-area: header;
+        }
+
+        nav {
+            grid-area: nav;
+            margin-right: 5%;
+
+        }
+
+        #sidebar {
+            grid-area: sidebar;
+            margin-right: 5%;
+        }
+
+        main {
+            grid-area: main;
+            margin-right: 2%;
+
+        }
+
+        #Ad {
+            grid-area: Ad;
+            margin-right: 5%;
+
+        }
+
+        footer {
+            grid-area: footer;
+
+        }
+
+        ul {
+            display: flex;
+            flex-direction: column;
+            padding: 10px;
+        }
+    }
+}
