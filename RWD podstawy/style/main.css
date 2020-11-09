@@ -34,11 +34,21 @@ footer {
     padding: 5px;
 }
 
-@media(min-width:641px) {
+@media(min-width:640px) {
+
+    /* header,
+    nav,
+    main,
+    #sidebar,
+    #Ad,
+    footer {
+        margin: 0;
+    } */
+
     .container {
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 2fr 1fr;
+        grid-template-rows: 1fr 1fr 4fr 1fr;
         grid-template-areas:
             "header header header"
             "nav nav nav"
@@ -51,6 +61,7 @@ footer {
     header {
         grid-area: header;
 
+
     }
 
     nav {
@@ -60,7 +71,7 @@ footer {
 
     #sidebar {
         grid-area: sidebar;
-
+        margin-right: 5%;
     }
 
     main {
@@ -70,6 +81,7 @@ footer {
 
     #Ad {
         grid-area: Ad;
+        margin-right: 5%;
 
     }
 
@@ -83,4 +95,5 @@ footer {
         flex-direction: row;
         justify-content: space-between;
     }
-}
+
+    @media()
