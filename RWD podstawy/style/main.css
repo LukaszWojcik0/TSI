@@ -40,3 +40,9 @@ footer {
     border: 1px solid #fe7b0d;
     background-color: #ffed92;
 }
+
+@media (max-width: 640px) {
+    * {
+        display: flex;
+    }
+}
