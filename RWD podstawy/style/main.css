@@ -2,10 +2,11 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-
-
-
+    display: flex;
+    flex-direction: column;
 }
+
+
 
 li {
     list-style: none;
@@ -39,10 +40,4 @@ main {
 footer {
     border: 1px solid #fe7b0d;
     background-color: #ffed92;
-}
-
-@media (max-width: 640px) {
-    * {
-        display: flex;
-    }
 }
