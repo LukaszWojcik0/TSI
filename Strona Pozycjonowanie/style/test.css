@@ -8,11 +8,10 @@
 }
 
 body {
-    background-image: url(../background-img/tlorazem1.png);
+    background-image: url(../background-img/tlo1.jpg);
     background-position: top center;
     background-repeat: no-repeat;
     height: 100%;
-
 }
 
 /* ////////////////Góra strony */
@@ -55,6 +54,8 @@ li a {
     font-size: 3vw;
 }
 
+@media (min-width: 640px) {}
+
 
 /* ////////////////Środek strony cz1 */
 
@@ -94,16 +95,18 @@ li a {
     display: flex;
     justify-content: center;
     margin-top: 4vh;
+    margin-bottom: 9vw;
 }
 
 
 /* ////////////////Środek strony cz2 */
 
-#prawo {
-    padding: 1vh;
-    display: flex;
-    flex-direction: column;
 
+
+.prawo {
+    margin-top: 9vw;
+    display: flex;
+    flex-direction: column-reverse;
 }
 
 #t2 {
@@ -111,5 +114,33 @@ li a {
     justify-content: center;
     font-size: 7vw;
     margin: 4vw;
-    d
+}
+
+#jaa {
+    display: block;
+
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+
+}
+
+#art2 {
+
+    display: flex;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.9);
+    margin: 2vw;
+    text-align: justify;
+    margin-top: 6vh;
+    font-size: 4vw;
+    padding: 2vw;
+
+}
+
+#kim {
+    margin-top: 2vw;
+    background-color: rgba(255, 255, 255, 0.7);
+    margin: 2%;
 }
