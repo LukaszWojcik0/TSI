@@ -62,9 +62,29 @@ li a {
 
     #menu {
         padding: .2vw;
+        margin: 1%;
+    }
+
+}
+
+@media (min-width: 1100px) {
+    li a {
+        padding: 1vw;
+        font-size: 1.5vw;
+    }
+
+    #menu {
+        margin: .5%;
     }
 }
 
+
+@media (min-width: 1600px) {
+    li a {
+        padding: .5vw;
+        font-size: 1vw;
+    }
+}
 
 /* ////////////////Środek strony cz1 */
 
@@ -124,16 +144,24 @@ li a {
     #art1 {
         font-size: 3vw;
         /* padding-bottom: 3vh; */
+        height: 70%;
 
     }
 
+    #insta {
+        /* margin-top: 7vw; */
+        display: flex;
+        float: right;
+        width: 40%;
 
+    }
 }
 
 
 @media (min-width: 1100px) {
     #art1 {
         font-size: 2vw;
+        width: 50%;
     }
 }
 
@@ -194,6 +222,7 @@ li a {
         display: flex;
         flex-direction: row-reverse;
         float: left;
+        width: 30%;
 
     }
 }
@@ -201,5 +230,11 @@ li a {
 @media (min-width: 950px) {
     #art2 {
         font-size: 3vw;
+    }
+}
+
+@media (min-width: 1100px) {
+    #art2 {
+        font-size: 2vw;
     }
 }
