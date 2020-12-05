@@ -275,3 +275,198 @@ li a {
         font-size: 1.5vw;
     }
 }
+
+
+/* ////////////////PORTFOLIO//////////////// */
+
+.portf {
+    background-image: url(../background-img/tlo2.jpg);
+    background-position: top center;
+    background-repeat: repeat;
+    height: 100%;
+
+}
+
+#t3 {
+    display: flex;
+    justify-content: center;
+    font-size: 7vw;
+    margin: 4vw;
+    color: #C0FF53;
+
+}
+
+#title3 {
+    padding: 1vh;
+    display: flex;
+    flex-direction: column;
+
+}
+
+#art3 {
+    display: flex;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.9);
+    margin: 2vw;
+    text-align: justify;
+    margin-top: 6vh;
+    font-size: 4vw;
+    padding: 2vw;
+}
+
+
+@media (min-width: 720px) {
+    /* #lewo {
+        display: flex;
+        flex-direction: row;
+        float: left;
+    } */
+
+
+}
+
+
+@media (min-width: 800px) {
+    #art3 {
+        font-size: 3vw;
+        /* padding-bottom: 3vh; */
+        height: 70%;
+
+    }
+
+    #insta {
+        /* margin-top: 7vw; */
+        display: flex;
+        float: right;
+        width: 40%;
+
+    }
+}
+
+
+@media (min-width: 1100px) {
+    #art3 {
+        font-size: 2vw;
+    }
+
+    #t1 {
+        font-size: 5vw;
+    }
+}
+
+@media (min-width: 1600px) {
+    #art3 {
+        font-size: 1.5vw;
+    }
+}
+
+/* ////////////////Galeria */
+
+#zdjecia {
+    margin-top: 5vh;
+    padding: 2vw;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: auto;
+    grid-template-areas:
+        "a1"
+        "a2"
+        "a3"
+        "a4"
+        "a5"
+        "a6"
+        "a7"
+        "a8"
+        "a9";
+
+}
+
+#a1 {
+    grid-area: a1;
+}
+
+#a2 {
+    grid-area: a2;
+}
+
+#a3 {
+    grid-area: a3;
+}
+
+#a4 {
+    grid-area: a4;
+}
+
+#a5 {
+    grid-area: a5;
+}
+
+#a6 {
+    grid-area: a6;
+}
+
+#a7 {
+    grid-area: a7;
+}
+
+#a8 {
+    grid-area: a8;
+}
+
+#a9 {
+    grid-area: a9;
+}
+
+.zdj {
+    display: block;
+    text-align: center;
+    padding: 3vw;
+    width: 100%;
+}
+
+.podpis {
+    display: flex;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.9);
+    margin: 2vw;
+    text-align: center;
+    font-size: 4vw;
+    padding: 2vw;
+}
+
+#footerPort {
+    margin-top: 2vw;
+    background-color: rgba(255, 255, 255, 0.6);
+    color: rgba(0, 0, 0);
+    margin: 2%;
+    padding: 1vw;
+}
+
+@media (min-width: 780px) {
+    #zdjecia {
+        grid-template-columns: 50% 50%;
+        grid-template-rows: auto;
+        grid-template-areas:
+            "a1 a1"
+            "a2 a3"
+            "a4 a5"
+            "a6 a7"
+            "a8 a9";
+    }
+
+    .podpis {
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 2.5vw;
+        width: 80%;
+
+    }
+
+    .zdj {
+        margin-left: auto;
+        margin-right: auto;
+        width: 80%;
+    }
+}
+
+@media (min-width: 980px) {}
